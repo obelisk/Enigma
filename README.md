@@ -21,4 +21,10 @@ Contains all other settings.  The default settings are 4 rotors at 4, 25, 14, 11
 
 The plugboard can be turned off if desiered by setting the usePlugboard variable to 0.
 
+
+About the Apache 2.0 Licence
+
+Basically, I just want you to (1) Tell me if you are going to use my code commercially and (2) Give me credit whenever you use my code.
+Simple.
+
 Have fun and never stop learning.
