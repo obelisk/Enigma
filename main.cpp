@@ -27,10 +27,10 @@ int main(int argc, const char * argv[]){
     bool usePlugboard = 1;
     
     //Init objection values
-    std::string message = "MKSY EKLV EHUM TUXO XFTV HJU";
+    std::string message = "JYEB WAMD WXCR DWTO WXYN PELE IZJH";
     std::string messageparse = "";
     std::string returned = "";
-    
+    std::string in = "";
     std::cout << "Welcome To Enigma!\n";
     
     runConfigure();
@@ -47,6 +47,12 @@ int main(int argc, const char * argv[]){
     //rotorSystem->setRotor(4, 11, scramble4i);
     rotorSystem->printRotorStatus();
     
+    //Read in a string to encrypt/decrypt
+    std::string tmp = "";
+    message = "";
+    while(std::cin >> tmp){
+        message +=tmp;
+    }
     for(int i=0; i<message.length(); i++){
         if(message.at(i) != ' '){
             messageparse += message.at(i);
