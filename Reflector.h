@@ -18,6 +18,6 @@
 #include <iostream>
 #include "Rotor.h"
 
-char reflectProper(char letter, Rotor *lastRotor);
+char reflect(char letter, Rotor *lastRotor);
 
 #endif /* defined(__Enigma__Reflector__) */

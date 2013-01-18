@@ -40,17 +40,6 @@ int Rotor::turnRotor(){
     return 0;
 }
 
-int Rotor::turnRotor(int turn){
-    setting += turn;
-    if(setting >= 26){
-        int kick = (setting+turn)/26;
-        setting += turn;
-        setting %= 26;
-        return kick;
-    }
-    return 0;
-}
-
 int Rotor::getSetting(){
     return setting;
 }
@@ -75,18 +64,12 @@ std::vector<int>* Rotor::getRotorKey(){
 }
 
 int Rotor::shiftLetter(int letter){
-    //std::cout << "Processed a " << (char)(65+letter) << " into a " << (char)(65+key[letter]) << "\n";
-    //for(int i = 0; i<26; i++){
-    //    std::cout << (char)(65+key[i]);
-    //}
-    //std::cout << "\n";
     return key[letter];
 }
 
 int Rotor::shiftLetterReverse(int letter){
     for(int i=0; i < 26; i++){
         if(key.at(i) == letter){
-            //std::cout << "Processed a " << mapto << " into a " << (char)(i+65) << "\n";
             return i;
         }
     }

@@ -14,7 +14,7 @@
  
 #include "Reflector.h"
 
-char reflectProper(char letter, Rotor *lastRotor){
+char reflect(char letter, Rotor *lastRotor){
     
     //Reflector A : ??? / ????
     char reflectorarray[13][2] = {{'A', 'E'},{'B', 'J'},{'C', 'M'},{'D', 'Z'},{'F', 'L'},{'G', 'Y'},{'H', 'X'},{'I', 'V'},{'K', 'W'},{'N','R'},{'O','Q'},{'P','U'},{'S','T'}};
@@ -30,12 +30,11 @@ char reflectProper(char letter, Rotor *lastRotor){
             break;
         }
     }
-    //std::cout << "Reflected a " << letter << " into a " << mapto << "\n";
+    
     int maptoi = mapto-65;
     
     for(int i=0; i < 26; i++){
         if(key->at(i) == maptoi){
-            //std::cout << "Processed a " << mapto << " into a " << (char)(i+65) << "\n";
             return i+65;
         }
     }

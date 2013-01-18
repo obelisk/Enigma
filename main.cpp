@@ -23,11 +23,11 @@ limitations under the License.*/
 int main(int argc, const char * argv[]){
 
     //Init primitive values
-    int numRotors = 4;
+    int numRotors = 3;
     bool usePlugboard = 1;
     
     //Init objection values
-    std::string message = " ZRRN PDYU LVOP IQFH HXXK AWJO GZHK IEKV OHWQ CLTD";
+    std::string message = "MKSY EKLV EHUM TUXO XFTV HJU";
     std::string messageparse = "";
     std::string returned = "";
     
@@ -44,7 +44,7 @@ int main(int argc, const char * argv[]){
     rotorSystem->setRotor(1, 4, scramble1i);
     rotorSystem->setRotor(2, 25, scramble2i);
     rotorSystem->setRotor(3, 14, scramble3i);
-    rotorSystem->setRotor(4, 11, scramble4i);
+    //rotorSystem->setRotor(4, 11, scramble4i);
     rotorSystem->printRotorStatus();
     
     for(int i=0; i<message.length(); i++){

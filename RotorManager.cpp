@@ -16,12 +16,9 @@
 #include "Reflector.h"
 
 RotorManager::RotorManager(){
-    //rotors = *new std::vector<Rotor*>[0];
 }
 
 RotorManager::RotorManager(int numRotors){
-    //rotors = *new std::vector<Rotor*>;
-    
     for(int i=0; i < numRotors; i++){
         rotors.push_back(new Rotor());
     }
@@ -72,11 +69,8 @@ char RotorManager::processLetter(char toProcess){
             letter %= 26;
         }
     }
-    //std::cout << "Reflected from " << (char)(65+letter) << " to ";
-    //std::cout << "\nPROPER REFLECTION TEST: " << "Reflected from " << (char)(65+letter) << " to " << reflectProper(letter, rotors[0]) << "\n";
-    letter = reflectProper(letter+65, rotors[0]);                                //Reflect the letter
+    letter = reflect(letter+65, rotors[0]);                                //Reflect the letter
     letter -= 65;
-    //std::cout << (char)(65+letter) << "\n";
 
     
     for(int i = 1; i < numRotors; i++){                      //Send it back through the rotors

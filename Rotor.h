@@ -25,7 +25,6 @@ public:
     Rotor();
     ~Rotor();
     int turnRotor();
-    int turnRotor(int turn);
     int getSetting();
     void setRotor(int newSetting);
     void setRotorKey(std::vector<int>key);
