@@ -1,7 +1,7 @@
 Enigma
 
 
-This is a small program a wrote that will encrypt strings in the same fashion as the WWII Enigma Cipher device used by the Germans.
+This is a small program I wrote that will encrypt strings in the same fashion as the WWII Enigma Cipher device used by the Germans.
 
 The program is written in C++ and was tested on OS X and Linux boxes.  I hope you find it interesting and useful for demonstrations or understanding how the enigma code worked.
 
